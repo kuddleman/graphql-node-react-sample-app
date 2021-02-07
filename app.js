@@ -8,7 +8,10 @@ const app = express()
 // set up graphql endpoint
 
 app.use('/graphql', graphqlHTTP({
-    schema
+    schema,
+    //use the postman-like gui to test:  
+    // localhost:4000/graphql
+    graphiql: true
 }))
 
 app.listen(4000, ()=>{
