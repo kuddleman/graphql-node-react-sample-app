@@ -1,9 +1,21 @@
 import express from 'express'
 import {graphqlHTTP} from 'express-graphql'
 import schema from './schema/schema.js'
+import mongoose from 'mongoose'
+//import pkg from 'mongodb';
 
 
 const app = express()
+
+const uri ='mongodb+srv://javascriptmastery:@Swissairdc8@cluster0.pehy5.mongodb.net/graphql-netninja?retryWrites=true&w=majority'
+mongoose.connect(uri, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+})
+.then(()=>{
+    console.log(`MongoDB connected...`)
+})
+.catch(err => console.log(err))
 
 // set up graphql endpoint
 
