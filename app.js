@@ -2,7 +2,7 @@ import express from 'express'
 import {graphqlHTTP} from 'express-graphql'
 import schema from './schema/schema.js'
 import mongoose from 'mongoose'
-//import pkg from 'mongodb';
+
 
 
 const app = express()

@@ -5,6 +5,6 @@ Tutorial is here:
 https://www.youtube.com/watch?v=ed8SzALpx1Q
 
 I'm at:
-48:20 
+#17 Mongoose Models
 
 
